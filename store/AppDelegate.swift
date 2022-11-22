@@ -4,10 +4,10 @@
 //
 //  Created by 황수비 on 2022/11/09.
 //
-
+import Foundation
 import UIKit
+@UIApplicationMain
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

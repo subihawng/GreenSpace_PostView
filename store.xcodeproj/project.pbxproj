@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		413AAFD1291B77270004170D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AAFD0291B77270004170D /* AppDelegate.swift */; };
 		413AAFD3291B77270004170D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AAFD2291B77270004170D /* SceneDelegate.swift */; };
-		413AAFD5291B77270004170D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AAFD4291B77270004170D /* ViewController.swift */; };
+		413AAFD5291B77270004170D /* PostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AAFD4291B77270004170D /* PostingViewController.swift */; };
 		413AAFD8291B77270004170D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFD6291B77270004170D /* Main.storyboard */; };
 		413AAFDA291B77270004170D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFD9291B77270004170D /* Assets.xcassets */; };
 		413AAFDD291B77270004170D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFDB291B77270004170D /* LaunchScreen.storyboard */; };
+		414619B2292B5AA300676683 /* PostingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */; };
+		414619B7292B970800676683 /* PostingCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */; };
+		414619BB292B973E00676683 /* PostingCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */; };
+		41786D58292CB4E10082B710 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 41786D57292CB4E10082B710 /* YPImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		413AAFCD291B77270004170D /* store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413AAFD0291B77270004170D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413AAFD2291B77270004170D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		413AAFD4291B77270004170D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		413AAFD4291B77270004170D /* PostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingViewController.swift; sourceTree = "<group>"; };
 		413AAFD7291B77270004170D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		413AAFD9291B77270004170D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413AAFDC291B77270004170D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AAFDE291B77270004170D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostingCollectionViewCell.swift; path = store/PostingCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostingCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingCustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41786D58292CB4E10082B710 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A9AE5ED90C8E7319CA967D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		413AAFC4291B77270004170D = {
 			isa = PBXGroup;
 			children = (
 				413AAFCF291B77270004170D /* store */,
 				413AAFCE291B77270004170D /* Products */,
+				05A9AE5ED90C8E7319CA967D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +74,40 @@
 			children = (
 				413AAFD0291B77270004170D /* AppDelegate.swift */,
 				413AAFD2291B77270004170D /* SceneDelegate.swift */,
-				413AAFD4291B77270004170D /* ViewController.swift */,
-				413AAFD6291B77270004170D /* Main.storyboard */,
+				414619AE2924F70C00676683 /* model */,
+				414619AD2924F70700676683 /* view */,
+				414619AC2924F70200676683 /* controller */,
 				413AAFD9291B77270004170D /* Assets.xcassets */,
 				413AAFDB291B77270004170D /* LaunchScreen.storyboard */,
 				413AAFDE291B77270004170D /* Info.plist */,
 			);
 			path = store;
+			sourceTree = "<group>";
+		};
+		414619AC2924F70200676683 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				413AAFD4291B77270004170D /* PostingViewController.swift */,
+				414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */,
+				414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */,
+				414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		414619AD2924F70700676683 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				413AAFD6291B77270004170D /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		414619AE2924F70C00676683 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +117,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 413AAFE1291B77270004170D /* Build configuration list for PBXNativeTarget "store" */;
 			buildPhases = (
+				355DD273B757EF95F25F635A /* [CP] Check Pods Manifest.lock */,
 				413AAFC9291B77270004170D /* Sources */,
 				413AAFCA291B77270004170D /* Frameworks */,
 				413AAFCB291B77270004170D /* Resources */,
+				B207C59B90721C1A7B32E83E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = store;
+			packageProductDependencies = (
+				41786D57292CB4E10082B710 /* YPImagePicker */,
+			);
 			productName = store;
 			productReference = 413AAFCD291B77270004170D /* store.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 413AAFC4291B77270004170D;
+			packageReferences = (
+				41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+			);
 			productRefGroup = 413AAFCE291B77270004170D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,18 +178,63 @@
 			files = (
 				413AAFDD291B77270004170D /* LaunchScreen.storyboard in Resources */,
 				413AAFDA291B77270004170D /* Assets.xcassets in Resources */,
+				414619B7292B970800676683 /* PostingCustomCollectionViewCell.xib in Resources */,
 				413AAFD8291B77270004170D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		355DD273B757EF95F25F635A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-store-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B207C59B90721C1A7B32E83E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-store/Pods-store-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-store/Pods-store-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-store/Pods-store-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		413AAFC9291B77270004170D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413AAFD5291B77270004170D /* ViewController.swift in Sources */,
+				414619BB292B973E00676683 /* PostingCustomCollectionViewCell.swift in Sources */,
+				413AAFD5291B77270004170D /* PostingViewController.swift in Sources */,
+				414619B2292B5AA300676683 /* PostingCollectionViewCell.swift in Sources */,
 				413AAFD1291B77270004170D /* AppDelegate.swift in Sources */,
 				413AAFD3291B77270004170D /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41786D57292CB4E10082B710 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 413AAFC5291B77270004170D /* Project object */;
 }
