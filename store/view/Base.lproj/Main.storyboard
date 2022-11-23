@@ -75,7 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="PostingCollectionView" destination="Xa0-U0-42S" id="6jh-Y8-16R"/>
-                        <outlet property="addButton" destination="MuP-SC-3If" id="sHY-8g-u83"/>
+                        <outlet property="addButton" destination="MuP-SC-3If" id="JtZ-LA-6Zw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1K-zm-iJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

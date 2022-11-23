@@ -13,10 +13,10 @@
 		413AAFD8291B77270004170D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFD6291B77270004170D /* Main.storyboard */; };
 		413AAFDA291B77270004170D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFD9291B77270004170D /* Assets.xcassets */; };
 		413AAFDD291B77270004170D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AAFDB291B77270004170D /* LaunchScreen.storyboard */; };
-		414619B2292B5AA300676683 /* PostingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */; };
-		414619B7292B970800676683 /* PostingCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */; };
 		414619BB292B973E00676683 /* PostingCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */; };
-		41786D58292CB4E10082B710 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 41786D57292CB4E10082B710 /* YPImagePicker */; };
+		416FA992292DEECA0048E3DC /* PostingCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416FA991292DEECA0048E3DC /* PostingCustomCollectionViewCell.xib */; };
+		416FA994292DEF660048E3DC /* GlobalPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416FA993292DEF660048E3DC /* GlobalPosting.swift */; };
+		7D08041CF81294F68C47255E /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF53ED0BB8E915FF1EE1DC3 /* Pods_store.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,12 @@
 		413AAFD9291B77270004170D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413AAFDC291B77270004170D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AAFDE291B77270004170D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostingCollectionViewCell.swift; path = store/PostingCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostingCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingCustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		416FA991292DEECA0048E3DC /* PostingCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostingCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		416FA993292DEF660048E3DC /* GlobalPosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPosting.swift; sourceTree = "<group>"; };
+		4CF53ED0BB8E915FF1EE1DC3 /* Pods_store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0295808EE0186A759A7F477 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
+		FABF79689B20CAC49CBDDD97 /* Pods-store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.release.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41786D58292CB4E10082B710 /* YPImagePicker in Frameworks */,
+				7D08041CF81294F68C47255E /* Pods_store.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 		05A9AE5ED90C8E7319CA967D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CF53ED0BB8E915FF1EE1DC3 /* Pods_store.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,6 +62,7 @@
 				413AAFCF291B77270004170D /* store */,
 				413AAFCE291B77270004170D /* Products */,
 				05A9AE5ED90C8E7319CA967D /* Frameworks */,
+				BEB8C54B9510AD50499BCEB0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				413AAFD4291B77270004170D /* PostingViewController.swift */,
-				414619B1292B5AA300676683 /* PostingCollectionViewCell.swift */,
 				414619BA292B973E00676683 /* PostingCustomCollectionViewCell.swift */,
-				414619B6292B970800676683 /* PostingCustomCollectionViewCell.xib */,
+				416FA991292DEECA0048E3DC /* PostingCustomCollectionViewCell.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -106,8 +110,18 @@
 		414619AE2924F70C00676683 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				416FA993292DEF660048E3DC /* GlobalPosting.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		BEB8C54B9510AD50499BCEB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0295808EE0186A759A7F477 /* Pods-store.debug.xcconfig */,
+				FABF79689B20CAC49CBDDD97 /* Pods-store.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +142,6 @@
 			dependencies = (
 			);
 			name = store;
-			packageProductDependencies = (
-				41786D57292CB4E10082B710 /* YPImagePicker */,
-			);
 			productName = store;
 			productReference = 413AAFCD291B77270004170D /* store.app */;
 			productType = "com.apple.product-type.application";
@@ -159,9 +170,6 @@
 				Base,
 			);
 			mainGroup = 413AAFC4291B77270004170D;
-			packageReferences = (
-				41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
-			);
 			productRefGroup = 413AAFCE291B77270004170D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,7 +186,7 @@
 			files = (
 				413AAFDD291B77270004170D /* LaunchScreen.storyboard in Resources */,
 				413AAFDA291B77270004170D /* Assets.xcassets in Resources */,
-				414619B7292B970800676683 /* PostingCustomCollectionViewCell.xib in Resources */,
+				416FA992292DEECA0048E3DC /* PostingCustomCollectionViewCell.xib in Resources */,
 				413AAFD8291B77270004170D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,9 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416FA994292DEF660048E3DC /* GlobalPosting.swift in Sources */,
 				414619BB292B973E00676683 /* PostingCustomCollectionViewCell.swift in Sources */,
 				413AAFD5291B77270004170D /* PostingViewController.swift in Sources */,
-				414619B2292B5AA300676683 /* PostingCollectionViewCell.swift in Sources */,
 				413AAFD1291B77270004170D /* AppDelegate.swift in Sources */,
 				413AAFD3291B77270004170D /* SceneDelegate.swift in Sources */,
 			);
@@ -378,6 +386,7 @@
 		};
 		413AAFE2291B77270004170D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0295808EE0186A759A7F477 /* Pods-store.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -405,6 +414,7 @@
 		};
 		413AAFE3291B77270004170D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABF79689B20CAC49CBDDD97 /* Pods-store.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,25 +462,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		41786D57292CB4E10082B710 /* YPImagePicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41786D56292CB4E10082B710 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
-			productName = YPImagePicker;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 413AAFC5291B77270004170D /* Project object */;
 }
